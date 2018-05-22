@@ -15,6 +15,6 @@ titles = soup.find_all('a', 'title')
 #     if file:
 #         file.close()
 
-with open(r'/Users/yangyi/Desktop/titles.txt', 'w') as file:
+with open(r'/Users/yanyu/Desktop/titles.txt', 'w') as file:
     for title in titles:
         file.write(title.string + '\n')

@@ -10,7 +10,7 @@ page_info = request.urlopen(page).read().decode('utf-8')
 soup = BeautifulSoup(page_info, 'html.parser')
 
 links = soup.find_all('img', "origin_image zh-lightbox-thumb", src = re.compile(r'.jpg$'))
-local_path = r'/Users/yangyi/Desktop/Pic'
+local_path = r'/Users/yanyu/Desktop/Pic'
 
 for link in links:
     print(link.attrs['src'])
