@@ -19,10 +19,11 @@ from django.contrib import admin
 from django.urls import path, include
 # from django.conf.urls import include, url
 
-app_name = 'learning_log'
+# app_name = 'learning_log'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('learning_logs.urls', namespace='learning_logs')),
+    path('users/', include('users.urls', namespace='users')),
     # url(r'', include('learning_logs.urls', namespace='learning_logs')),
 ]
