@@ -31,16 +31,19 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    # 我的应用程序
-    'learning_logs',
-    'users',
-
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # 我的应用程序
+    'learning_logs',
+    'users',
+
+    # 第三方应用
+    'bootstrap3',
 ]
 
 MIDDLEWARE = [
@@ -125,3 +128,12 @@ STATIC_URL = '/static/'
 
 # 我的设置
 LOGIN_URL = '/users/login/'
+
+# django-bootstrap3的设置
+BOOTSTRAP3 = {
+    'include_jquery': True
+}
+
+
+
+
